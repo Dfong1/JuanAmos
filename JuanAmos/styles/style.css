@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #EBEBEB;
+}
+
+.container{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.form__container{
+    width: 100%;
+}
+
+#form{
+    background-color: #08113A;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 10px;
+    width: 50%;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.elements__form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 80%;
+}
+
+h1{
+    color: white;
+    font-style: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.label{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.input{
+    height: 40px;
+    border: none;
+    background-color:azure;
+    color: darkslategrey;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.input__submit{
+    height: 35px;
+    background-color: #EB1C22;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+}
+
+.footer__JuanAmos{
+    background-color: #08113A;
+    height: 10%;
+    margin-top: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.logo__footer img{
+    width: 150px;
+    height: 150px;
+    border: none;
+}
+
+.container__elementsFooter{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.container__elementsFooter a{
+    text-decoration: none;
+    color:azure;
+    font-size: 15px;
+}
+
+.redes__sociales img{
+    width: 32px;
+    height: 32px;
+}
+
+
+.facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.instagram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+@media (max-width: 700px){
+    .logo__footer{
+        display: none;
+    }
+
+    .footer__JuanAmos{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .facebook{
+        text-align: justify;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .instagram{
+        text-align: justify;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
