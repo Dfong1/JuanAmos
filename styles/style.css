@@ -43,7 +43,7 @@ body{
     width: 80%;
 }
 
-h1{
+.h1{
     color: white;
     font-style: bold;
     text-align: center;
@@ -151,4 +151,82 @@ h1{
     #form{
         width: 80%;
     }
+}
+
+.container__all{
+    display: grid;
+    grid-template-columns: minmax(250px, 300px);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "aside content"
+    "aside info";
+    height: 100%;
+}
+
+.row{
+    margin: 5px;
+    max-width: 500px;
+}
+
+.info__reciente{
+    display: flex;
+    flex-direction: column;
+    grid-area: content;
+}
+
+.card{
+    width: 450px;
+    height: auto;
+}
+
+.row__info{
+    max-width: 100%;
+}
+
+.card__info{
+    width: 95%;
+}
+
+.nav__alumno{
+    background-color: #08113A;
+    width: 90%;
+    grid-area: aside; 
+    height: 100%;
+}
+
+.items__nav{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.items__nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+}
+
+
+.titulo__alumno{
+    padding: 20px;
+}
+
+.info__alumno{
+    grid-area: info;
+}
+
+.row__info{
+    height: 100%;
+}
+
+.footer__alumno{
+    margin-top: 0 !important;
+}
+
+.logo__alumno{
+    width: 100%;
 }
