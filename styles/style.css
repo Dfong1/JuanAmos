@@ -76,8 +76,6 @@ body{
     width: 100%;
 }
 
-
-
 .footer__JuanAmos{
     background-color: #08113A;
     height: 10%;
@@ -154,6 +152,13 @@ body{
     #form{
         width: 80%;
     }
+    .menu__hamburguesa{
+        display: block;
+    }
+}
+
+.menu__hamburguesa{
+    display: none;
 }
 
 .container__all{
@@ -268,10 +273,16 @@ body{
     flex-wrap: wrap;
 }
 
+.abrir-menu, .cerrar-menu{
+    display: none;
+}
+
 @media (max-width: 767px){
 
     .container__all{
-        min-width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
     .info__reciente{
@@ -280,26 +291,95 @@ body{
         margin: 0;
     }
 
-    .info__reciente h1{
+    .info__reciente img{
         width: auto;
     }
 
     .recientes{
         margin: auto;
+        width: 100%;
     }
 
     .info__alumno{
         margin: auto;
+        padding: auto;
+    }
+
+    .abrir-menu, .cerrar-menu{
+        display: block;
+    }
+
+    .abrir-menu{
+        width: 10%;
+        height: 5%;
+    }
+
+    .cerrar-menu{
+        width: 40%;
+        height: 12.5%;
+        margin-left: 50%;
     }
 
     .nav__alumno{
+        opacity: 0;
+        visibility: hidden;
+
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #08113A;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+        text-align: end;
+    }
+
+    .nav__alumno.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav__alumno .logo__alumno{
         display: none;
+    }
+
+    .row{
+        width: 95%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .info__alumno{
+        width: 95%;
+    }
+    .row__info{
+        width: 100%;
+        margin: 0;
+    }
+
+    .card__info{
+        padding: 0;
+        width: inherit;
     }
 }
 
 @media (width: 1024px){
     .row{
         width: 200px;
+    }
+}
+
+@media (width: 400px){
+    .container__all{
+        width: 100vh;
+        padding: 500px;
+    }
+    .nav__alumno{
+        margin-left: 500px;
     }
 }
 
