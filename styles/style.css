@@ -73,7 +73,10 @@ body{
     cursor: pointer;
     font-size: 18px;
     color: white;
+    width: 100%;
 }
+
+
 
 .footer__JuanAmos{
     background-color: #08113A;
@@ -154,24 +157,16 @@ body{
 }
 
 .container__all{
-    display: grid;
-    grid-template-columns: minmax(250px, 300px);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-    "aside content"
-    "aside info";
-    height: 100%;
-}
-
-.row{
-    margin: 5px;
-    max-width: 500px;
+    display: flex;
+    height: 100vh;
 }
 
 .info__reciente{
     display: flex;
     flex-direction: column;
     grid-area: content;
+    flex: 1;
+    margin-left: 50px;
 }
 
 .card{
@@ -189,9 +184,9 @@ body{
 
 .nav__alumno{
     background-color: #08113A;
-    width: 90%;
+    width: 20%;
     grid-area: aside; 
-    height: 100%;
+    height: 100vh;
 }
 
 .items__nav{
@@ -215,18 +210,96 @@ body{
     padding: 20px;
 }
 
-.info__alumno{
-    grid-area: info;
-}
-
 .row__info{
-    height: 100%;
+    grid-area: content;
+    background-color: #ffff;
+    width: 400px;
+    height: auto;
+    text-align: justify;
+    margin: 10px;
 }
 
-.footer__alumno{
-    margin-top: 0 !important;
+.card__info{
+    padding: 20px;
 }
 
 .logo__alumno{
     width: 100%;
 }
+
+.row{
+    grid-area: content;
+    background-color: #ffff;
+    width: 400px;
+    height: auto;
+    text-align: justify;
+    margin: 10px;
+}
+
+.content__row{
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.p__row{
+    font-size: 32px;
+    text-align: center;
+    width: auto;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.header__row{
+    font-size: 24px;
+}
+
+.card-title{
+    font-size: 24px;
+}
+
+.card-text{
+    font-size: 18px;
+    text-align: justify;
+    padding: 0;
+}
+
+.recientee{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 767px){
+
+    .container__all{
+        min-width: 100%;
+    }
+
+    .info__reciente{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .info__reciente h1{
+        width: auto;
+    }
+
+    .recientes{
+        margin: auto;
+    }
+
+    .info__alumno{
+        margin: auto;
+    }
+
+    .nav__alumno{
+        display: none;
+    }
+}
+
+@media (width: 1024px){
+    .row{
+        width: 200px;
+    }
+}
+
