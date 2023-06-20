@@ -170,6 +170,7 @@ body{
     display: flex;
     flex-direction: column;
     grid-area: content;
+    flex: 1;
     margin-left: 50px;
 }
 
@@ -216,10 +217,10 @@ body{
 
 .row__info{
     grid-area: content;
-    background-color: #ffff;
     width: 400px;
     height: auto;
     text-align: justify;
+    margin: 10px
 }
 
 .card__info{
@@ -313,9 +314,8 @@ body{
     }
 
     .cerrar-menu{
-        width: 40%;
-        height: 12.5%;
-        margin-left: 50%;
+        width: 50px;
+        margin-left: 60%;
     }
 
     .nav__alumno{
@@ -324,8 +324,6 @@ body{
 
         width: 50%;
         display: flex;
-        justify-content: center;
-        align-items: flex-end;
         flex-direction: column;
         position: absolute;
         top: 0;
@@ -371,13 +369,17 @@ body{
     }
 }
 
-@media (width: 400px){
+@media (max-width: 400px){
     .container__all{
         width: 100vh;
-        padding: 500px;
     }
-    .nav__alumno{
-        margin-left: 500px;
-    }
-}
 
+    .nav__alumno{
+        width: 100%;
+    }
+
+    .cerrar-menu{
+        margin-left: 85%;
+    }
+
+}
