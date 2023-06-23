@@ -163,14 +163,12 @@ body{
 
 .container__all{
     display: flex;
-    height: 100vh;
 }
 
 .info__reciente{
     display: flex;
     flex-direction: column;
     grid-area: content;
-    flex: 1;
     margin-left: 50px;
 }
 
@@ -272,7 +270,7 @@ body{
     flex-wrap: wrap;
 }
 
-.abrir-menu, .cerrar-menu{
+.abrir-menu, .cerrar-menu, .img__nav{
     display: none;
 }
 
@@ -281,7 +279,7 @@ body{
     .container__all{
         max-width: 100%;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex-start;
     }
 
     .info__reciente{
@@ -299,39 +297,49 @@ body{
         width: 100%;
     }
 
+    .recientes h4{
+        text-align: center;
+    }
+
     .info__alumno{
         margin: auto;
         padding: auto;
     }
 
-    .abrir-menu, .cerrar-menu{
+    .abrir-menu, .cerrar-menu, .img__nav{
         display: block;
     }
 
+    .img__nav{
+        max-width: 100%;
+        margin: auto;
+    }
+
     .abrir-menu{
-        width: 10%;
-        height: 5%;
+        width: 60px;
+        margin-left: 10px;
     }
 
     .cerrar-menu{
-        width: 50px;
-        margin-left: 60%;
+        width: 60px;
+        margin-left: 10px;
     }
 
     .nav__alumno{
         opacity: 0;
         visibility: hidden;
 
-        width: 50%;
-        display: flex;
+        width: 100%;
         flex-direction: column;
         position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
         background-color: #08113A;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-        text-align: end;
+    }
+
+    .items{
+        font-size: 24px;
     }
 
     .nav__alumno.visible{
