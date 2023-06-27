@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/admin.css">
+    <title>::CAE::</title>
+</head>
+<body>
+    <nav class="container__nav">
+        <img src="../img/menu__hamburguesa.svg" alt="" class="menu abrir-menu">
+        <ul class="nav__alumno">
+            <img src="../img/cerrar_menu.svg" alt="" class="menu cerrar-menu">
+            <a class="a__lista" href="#"><li class="elemento__lista">Asistencias</li></a>
+            <a class="a__lista" href="#"><li class="elemento__lista">Alumnos</li></a>
+            <a class="a__lista" href="#"><li class="elemento__lista">Profesores</li></a>
+            <a class="a__lista" href="#"><li class="elemento__lista">Pagos</li></a>
+            <a class="a__lista" href="#"><li class="elemento__lista">Eventos</li></a>
+        </ul>
+    </nav>
+    <div class="container__table">
+<table class="table__alumno">
+    <div class="input-search">
+        <h2>Alumnos</h2>
+        <input type="search">
+    </div>
+    <thead>
+        <tr>
+            <th>Matricula</th>
+            <th>Nombre</th>
+            <th>Grado</th>
+            <th>Seccion</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>22170102</td>
+            <td>Daniel Fong Maldonado</td>
+            <td>3°</td>
+            <td>B</td>
+        </tr>
+    </tbody>
+</table>
+
+<table class="table__alumno">
+    <div class="input-search">
+        <h2>Profesores</h2>
+        <input type="search">
+    </div>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Cursos</th>
+            <th>Grupos</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Daniel Fong Maldonado</td>
+            <td>Bases de datos <br> Matematicas</td>
+            <td>Prepa 3° A <br> Secu 2° B</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+    <h2 style="text-align: center; margin-top: 20px;">Calendario y Eventos</h2>
+    <div class="calendario">
+
+        <div class="header__calendario">
+            <div id="mes-anterior"><img src="../img/anterior_calendario.svg" alt=""></div>
+            <div id="mes-actual"></div>
+            <div id="año-actual"></div>
+            <div id="mes-siguiente"><img src="../img/siguiente_calendario.svg" alt=""></div>
+        </div>
+
+        <div class="dias__mes">
+            <div class="calendario__responsive">L</div><div class="dia__calendario items__calendario">Lunes</div>
+            <div class="calendario__responsive">M</div><div class="dia__calendario items__calendario">Martes</div>
+            <div class="calendario__responsive">M</div><div class="dia__calendario items__calendario">Miercoles</div>
+            <div class="calendario__responsive">J</div><div class="dia__calendario items__calendario">Jueves</div>
+            <div class="calendario__responsive">V</div><div class="dia__calendario items__calendario">Viernes</div>
+            <div class="calendario__responsive">S</div><div class="dia__calendario items__calendario">Sabado</div>
+            <div class="calendario__responsive">D</div><div class="dia__calendario items__calendario">Domingo</div>
+        </div>
+
+        <div class="calendar__dates" id="dates"></div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/calendar.js"></script>
+</body>
+</html>

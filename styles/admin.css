@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #EBEBEB;
+}
+
+.container__nav{
+    background-color: #08113A;
+    width: 100%;
+}
+
+.nav__alumno{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.a__lista{
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+    height: 100%;
+}
+
+.menu{
+    display: none;
+}
+
+.a__lista:hover{
+    background-color: #030A2B;
+    transition: .5s;
+}
+
+@media (max-width: 700px){
+    .menu{
+        display: block;
+    }
+
+    .container__nav{
+        font-size: 24px;
+    }
+
+    .cerrar-menu, .abrir-menu{
+        width: 40px;
+    }
+
+    .nav__alumno{
+        opacity: 0;
+        visibility: hidden;
+
+        width: 100%;
+        flex-direction: column;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        background-color: #08113A;
+    }
+
+    .nav__alumno.visible{
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .elemento__lista{
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .cerrar-menu{
+        margin-right: 93.2%;
+    }
+
+}
+
+.table__asis{
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+td, th{
+    border: 1px solid black;
+}
+
+.container__table{
+    max-width: 100%;
+}
+
+
+.table__alumno{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.input-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    width: 100%;
+}
+.input-search h2{
+    width: 20%;
+}
+
+.input-search input{
+    width: 20%;
+    height: 30px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+hr{
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.calendario{
+    color: white;
+    background-color: #08113A;
+    width: 80%;
+    margin: 1em auto;
+    padding: .5em 0;
+}
+
+.header__calendario{
+    display: flex;
+    justify-content: space-around;
+}
+
+.dias__mes, .calendar__dates{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 10px;
+    text-align: center;
+}
+
+.container__hoy{
+    width: 100%;
+}
+
+.hoy{
+    background-color: coral;
+    width: 20%;
+    height: 25px;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.dias_mesAnterior{
+    color: #CECFD3;
+}
+
+.calendario__responsive{
+    display: none;
+}
+
+@media (max-width: 760px){
+    .table__asis{
+        max-width: 80%;
+    }
+    .calendario__responsive{
+        display: block;
+    }
+    .items__calendario{
+        display: none;
+    }
+}

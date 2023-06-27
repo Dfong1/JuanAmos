@@ -187,8 +187,7 @@ body{
 
 .nav__alumno{
     background-color: #08113A;
-    width: 20%;
-    grid-area: aside; 
+    width: 20%; 
     height: 100vh;
 }
 
@@ -380,14 +379,14 @@ body{
 @media (max-width: 400px){
     .container__all{
         width: 100vh;
+        position: absolute;
     }
 
     .nav__alumno{
         width: 100%;
+        position: absolute;
     }
-
-    .cerrar-menu{
-        margin-left: 85%;
+    .none{
+        display: none;
     }
-
 }
