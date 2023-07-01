@@ -177,3 +177,26 @@ hr{
         display: none;
     }
 }
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+    border: 1px solid black;
+    width: 50%;
+}
+
+.apellidos__profe{
+    display: flex;
+    flex-direction: column;
+}
+
+.container__form{
+    display: flex;
+    width: 100%;
+}
+
+.elements__form{
+    padding: 5px;
+}

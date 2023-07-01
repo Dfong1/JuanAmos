@@ -7,6 +7,7 @@ let currentMonth = currentDate.getMonth();
 let currentYear = currentDate.getFullYear();
 
 
+
 const dates = document.getElementById('dates')
 const mesActual = document.getElementById('mes-actual')
 const año = document.getElementById('año-actual')

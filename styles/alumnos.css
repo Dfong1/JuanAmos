@@ -1,0 +1,36 @@
+.tab {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .tab-content {
+    position: relative;
+    z-index: 0;
+  }
+
+  /*TABLA CALIFICIACIONES*/
+ #datos {
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 1px;
+    font-size: 16px;
+    margin-top: 50px;
+    width: 80%;
+    height: 200px;
+    }
+    
+    #datos tr:nth-child(even) {
+        background: #ccc;
+    }
+    
+    #datos td {
+        padding: 15px;
+    }
+    
+    .hide {
+        display: none;
+    }
+    
+    .red {
+        color: red;
+    }

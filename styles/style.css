@@ -152,9 +152,6 @@ body{
     #form{
         width: 80%;
     }
-    .menu__hamburguesa{
-        display: block;
-    }
 }
 
 .menu__hamburguesa{
@@ -162,7 +159,10 @@ body{
 }
 
 .container__all{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: 
+    "aside contenido";
 }
 
 .info__reciente{
@@ -187,8 +187,9 @@ body{
 
 .nav__alumno{
     background-color: #08113A;
-    width: 20%; 
+    width: 100%; 
     height: 100vh;
+    grid-area: aside;
 }
 
 .items__nav{
@@ -212,9 +213,18 @@ body{
     padding: 20px;
 }
 
+.contenedor__tabla{
+    grid-area: contenido;
+    width: 100%;
+}
+
+.forms__info{
+    display: flex;
+    height: 90%;
+}
+
 .row__info{
-    grid-area: content;
-    width: 400px;
+    width: 500px;
     height: auto;
     text-align: justify;
     margin: 10px
@@ -276,9 +286,15 @@ body{
 @media (max-width: 767px){
 
     .container__all{
-        max-width: 100%;
+        width: 100%;
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .contenedor__tabla{
+        width: 100%;
+        margin: auto;
     }
 
     .info__reciente{
@@ -289,6 +305,14 @@ body{
 
     .info__reciente img{
         width: auto;
+    }
+
+    .forms__info{
+        flex-direction: column;
+    }
+
+    .forms__info .card-body{
+        margin-bottom: 20px;
     }
 
     .recientes{
@@ -315,12 +339,12 @@ body{
     }
 
     .abrir-menu{
-        width: 60px;
+        width: 45px;
         margin-left: 10px;
     }
 
     .cerrar-menu{
-        width: 60px;
+        width: 45px;
         margin-left: 10px;
     }
 
@@ -335,6 +359,7 @@ body{
         right: 0;
         bottom: 0;
         background-color: #08113A;
+        height: calc(100%);
     }
 
     .items{
@@ -378,7 +403,7 @@ body{
 
 @media (max-width: 400px){
     .container__all{
-        width: 100vh;
+        width: 100%;
         position: absolute;
     }
 
