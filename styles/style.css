@@ -173,7 +173,7 @@ body{
 }
 
 .card{
-    width: 500px;
+    width: 450px;
     height: auto;
 }
 
@@ -188,7 +188,7 @@ body{
 .nav__alumno{
     background-color: #08113A;
     width: 100%; 
-    height: calc(100%);
+    height: 100vh;
     grid-area: aside;
 }
 
@@ -219,7 +219,7 @@ body{
 }
 
 .forms__info{
-    display: flex !important;
+    display: flex;
     height: 90%;
 }
 
@@ -239,6 +239,7 @@ body{
 }
 
 .row{
+    grid-area: content;
     background-color: #ffff;
     width: 400px;
     height: auto;
