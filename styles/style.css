@@ -220,7 +220,7 @@ body{
 
 .forms__info{
     display: flex;
-    height: 90%;
+    height: 85%;
 }
 
 .row__info{
@@ -355,9 +355,7 @@ body{
         width: 100%;
         flex-direction: column;
         position: absolute;
-        top: 0;
         right: 0;
-        bottom: 0;
         background-color: #08113A;
         height: calc(100%);
     }
@@ -392,6 +390,9 @@ body{
     .card__info{
         padding: 0;
         width: inherit;
+    }
+    .none{
+        display: none;
     }
 }
 
