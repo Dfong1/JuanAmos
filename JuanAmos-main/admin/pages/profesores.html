@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../img/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../../styles/admin.css">
+    <title>::CAE::</title>
+</head>
+<body>
+    <nav class="container__nav">
+        <img src="../../img/menu__hamburguesa.svg" alt="" class="menu abrir-menu">
+        <ul class="nav__alumno">
+            <img src="../../img/cerrar_menu.svg" alt="" class="menu cerrar-menu">
+            <a href="../index.html" class="a__lista"><li>Inicio</li></a>
+            <a class="a__lista" href="#"><li class="elemento__lista">Asistencias</li></a>
+            <a class="a__lista" href="../pages/alumnos.html"><li class="elemento__lista">Alumnos</li></a>
+            <a class="a__lista" href="../pages/profesores.html"><li class="elemento__lista">Profesores</li></a>
+            <a class="a__lista" href="#"><li class="elemento__lista">Pagos</li></a>
+            <a class="a__lista" href="#"><li class="elemento__lista">Eventos</li></a>
+        </ul>
+    </nav>
+    <div class="container__form">
+    <form id="form-profesor" class="crear__profesor form">
+        <div class="elements__form">
+            <label for="nombre">Nombre del profesor</label>
+            <input type="text" name="nombre-prof" id="nombre-prof">
+        </div>
+        <div class="elements__form apellidos__profe">
+            <label for="apellidoP">Apellido Paterno</label>
+            <input type="text" name="apellidoP" id="apellidoP">
+            <label for="apellidoM">Apellido Materno</label>
+            <input type="text" name="apellidoM" id="apellidoM">
+        </div>
+        <div class="elements__form">
+            <label for="numero">Numero de telefono</label>
+            <input type="number" name="numero-prof" id="numero-prof">
+        </div>
+        <div class="elements__form">
+            <label for="correo">Correo institucional</label>
+            <input type="email" name="correo-prof" id="correo-prof">
+        </div>
+        <div class="elements__form">
+            <input type="submit" value="Enviar" id="crear-prof">
+        </div>
+    </form>
+
+    <form class="form" id="materia_prof">
+        <div class="elements__form">
+            <label for="profesor">Elegir a profesor</label>
+            <select name="select-profesor" id="select-profesor"></select>
+        </div>
+        <div class="elements__form">
+            <label for="materia">Elegir materia</label>
+            <select name="select-materia" id="select-materia"></select>
+        </div>
+        <div class="elements__form">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+
+
+    <form class="form" id="grupo_mp">
+        <div class="elements__form">
+            <label for="grupo">Asignar grupo</label>
+            <input type="select" name="grupo" id="asignGrupo">
+        </div>
+        <div class="elements__form">
+            <label for="Seccion">Asignar seccion</label>
+            <input type="select" name="seccion" id="asignSeccion">
+        </div>
+        <div class="elements__form">
+            <input type="submit" value="Asignar">
+        </div>
+    </form>
+</div>
+    <table class="table">
+        <caption>Profesores</caption>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido paterno</th>
+                <th>Apellido materno</th>
+                <th>Telefono</th>
+                <th>Correo</th>
+            </tr>
+        </thead>
+        <tbody class="tbody-prof"></tbody>
+    </table>
+
+    <script src="../../js/script.js"></script>
+    <script src="../../js/profesor.js"></script>
+
+</body>
+</html>

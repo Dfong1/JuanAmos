@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #EBEBEB;
+}
+
+.container{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.form__container{
+    width: 100%;
+}
+
+#form{
+    background-color: #08113A;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 10px;
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.elements__form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 80%;
+}
+
+.h1{
+    color: white;
+    font-style: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.label{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.input{
+    height: 40px;
+    border: none;
+    background-color:azure;
+    color: darkslategrey;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.input__submit{
+    height: 35px;
+    background-color: #EB1C22;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    width: 100%;
+}
+
+.footer__JuanAmos{
+    background-color: #08113A;
+    height: 10%;
+    margin-top: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.logo__footer img{
+    width: 150px;
+    height: 150px;
+    border: none;
+}
+
+.container__elementsFooter{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.container__elementsFooter a{
+    text-decoration: none;
+    color:azure;
+    font-size: 15px;
+}
+
+.redes__sociales img{
+    width: 32px;
+    height: 32px;
+}
+
+
+.facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.instagram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+@media (max-width: 700px){
+    .logo__footer{
+        display: none;
+    }
+
+    .footer__JuanAmos{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .facebook{
+        text-align: justify;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .instagram{
+        text-align: justify;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #form{
+        width: 80%;
+    }
+}
+
+.menu__hamburguesa{
+    display: none;
+}
+
+.container__all{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: 
+    "aside contenido";
+}
+
+.info__reciente{
+    display: flex;
+    flex-direction: column;
+    grid-area: content;
+    margin-left: 50px;
+}
+
+.card{
+    width: 450px;
+    height: auto;
+}
+
+.row__info{
+    max-width: 100%;
+}
+
+.card__info{
+    width: 95%;
+}
+
+.nav__alumno{
+    background-color: #08113A;
+    width: 100%; 
+    height: calc(100vh);
+    grid-area: aside;
+}
+
+.items__nav{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.items__nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+}
+
+
+.titulo__alumno{
+    padding: 20px;
+}
+
+.contenedor__tabla{
+    grid-area: contenido;
+    width: 100%;
+}
+
+.forms__info{
+    display: flex;
+    height: 85%;
+}
+
+.row__info{
+    width: 500px;
+    height: auto;
+    text-align: justify;
+    margin: 10px
+}
+
+.card__info{
+    padding: 20px;
+}
+
+.logo__alumno{
+    width: 100%;
+}
+
+.row{
+    grid-area: content;
+    background-color: #ffff;
+    width: 400px;
+    height: auto;
+    text-align: justify;
+    margin: 10px;
+}
+
+.content__row{
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.p__row{
+    font-size: 32px;
+    text-align: center;
+    width: auto;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.header__row{
+    font-size: 24px;
+}
+
+
+.card-title{
+    font-size: 24px;
+}
+
+.card-text{
+    font-size: 18px;
+    text-align: justify;
+    padding: 0;
+}
+
+.recientee{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.abrir-menu, .cerrar-menu, .img__nav{
+    display: none;
+}
+
+@media (max-width: 767px){
+
+    .container__all{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contenedor__tabla{
+        width: 100%;
+        margin: auto;
+    }
+
+    .info__reciente{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .info__reciente img{
+        width: auto;
+    }
+
+    .forms__info{
+        flex-direction: column;
+    }
+
+    .forms__info .card-body{
+        margin-bottom: 20px;
+    }
+
+    .recientes{
+        margin: auto;
+        width: 100%;
+    }
+
+    .recientes h4{
+        text-align: center;
+    }
+
+    .info__alumno{
+        margin: auto;
+        padding: auto;
+    }
+
+    .abrir-menu, .cerrar-menu, .img__nav{
+        display: block;
+    }
+
+    .img__nav{
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .abrir-menu{
+        width: 45px;
+        margin-left: 10px;
+    }
+
+    .cerrar-menu{
+        width: 45px;
+        margin-left: 10px;
+    }
+
+    .nav__alumno{
+        opacity: 0;
+        visibility: hidden;
+
+        width: 100%;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        background-color: #08113A;
+        height: calc(100%);
+    }
+
+    .items{
+        font-size: 24px;
+    }
+
+    .nav__alumno.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav__alumno .logo__alumno{
+        display: none;
+    }
+
+    .row{
+        width: 95%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .info__alumno{
+        width: 95%;
+    }
+    .row__info{
+        width: 100%;
+        margin: 0;
+    }
+
+    .card__info{
+        padding: 0;
+        width: inherit;
+    }
+    .none{
+        display: none;
+    }
+
+    .img__nav{
+        background-color: #08113A;
+    }
+}
+
+@media (width: 1024px){
+    .row{
+        width: 200px;
+    }
+}
+
+@media (max-width: 400px){
+    .container__all{
+        width: 100%;
+        position: absolute;
+    }
+
+    .nav__alumno{
+        width: 100%;
+        position: absolute;
+    }
+    .none{
+        display: none;
+    }
+}
+
+.mb-3{
+    margin: auto;
+    width: 95%;
+}
