@@ -284,6 +284,11 @@ body{
     display: none;
 }
 
+.items{
+    background-color: #08113A; 
+    width:100%;
+}
+
 @media (max-width: 767px){
 
     .container__all{
