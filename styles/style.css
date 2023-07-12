@@ -188,7 +188,7 @@ body{
 .nav__alumno{
     background-color: #08113A;
     width: 100%; 
-    height: 100vh;
+    height: calc(100vh);
     grid-area: aside;
 }
 
@@ -263,6 +263,7 @@ body{
 .header__row{
     font-size: 24px;
 }
+
 
 .card-title{
     font-size: 24px;
@@ -394,6 +395,10 @@ body{
     .none{
         display: none;
     }
+
+    .img__nav{
+        background-color: #08113A;
+    }
 }
 
 @media (width: 1024px){
@@ -415,4 +420,9 @@ body{
     .none{
         display: none;
     }
+}
+
+.mb-3{
+    margin: auto;
+    width: 95%;
 }
